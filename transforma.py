@@ -23,6 +23,5 @@ class CSV2JSON(object):
         while i < len(lineas):
             datos = lineas[i].strip().split(",")
             dic = self.todict(datos)
-            # imprime cada diccionario en formato JSON individual
             print(json.dumps(dic))
             i = i + 1
