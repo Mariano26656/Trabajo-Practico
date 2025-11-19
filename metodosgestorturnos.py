@@ -5,9 +5,9 @@ class Gestordeturnos(object):
         self.archivoturno=archivoturno
         self.archivoclientes=archivoclientes
     def registrarcliente(self,**kwargs):
-        ar = open(self.archivoclientes, "a")  # "a" para agregar sin borrar lo anterior
-        valores = [str(valor) for valor in kwargs.values()]  # convierte los valores a texto
-        linea = ",".join(valores) + "\n"  # une los valores con comas y salto de línea
+        ar = open(self.archivoclientes, "a") 
+        valores = [str(valor) for valor in kwargs.values()]
+        linea = ",".join(valores) + "\n"  
         ar.write(linea)
         ar.close()
         ar = open(self.archivoclientes, "r")
@@ -17,8 +17,8 @@ class Gestordeturnos(object):
 
     def solicitarturno(self, **kwargs):
         ar = open(self.archivoturno, "a")
-        valores = [str(valor) for valor in kwargs.values()]  # convierte los valores a texto
-        linea = ",".join(valores) + "\n"  # une los valores con comas y salto de línea
+        valores = [str(valor) for valor in kwargs.values()]  
+        linea = ",".join(valores) + "\n" 
         ar.write(linea)
         ar.close()
         ar=open(self.archivoturno,"r")
