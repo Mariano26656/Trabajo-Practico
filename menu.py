@@ -27,6 +27,7 @@ while not continuar:
         DNI=input("ingrese el dni que desea registrar: ")
         g.registrarcliente(ID=ID,nombre=nombre,apellido=apellido,dni=DNI)
         print("Cliente agregado")
+        print("Clientes actuales\n")
         c.mostrarclientes("clientes.csv")
 
     elif opcion == "2":
@@ -37,6 +38,7 @@ while not continuar:
         servicio=input("ingrese el servicio que desea para el turno: ")
         g.solicitarturno(ID=ID,fecha=fecha,hora=hora,servicio=servicio)
         print("Turno agregado correctamente")
+        print("Turnos actuales\n")
         t.mostrarturnos("turnos.csv")
 
     elif opcion == "3":
