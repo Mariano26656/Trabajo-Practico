@@ -1,4 +1,4 @@
-from main import Cliente,Turno
+from main import Cliente,Profesionales,Turno
 c=Cliente()
 t=Turno()
 p=Proff()
