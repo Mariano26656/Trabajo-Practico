@@ -1,5 +1,5 @@
+
 import json
-import csv
 class CSV2JSON(object):
     def __init__(self, attributes):
         self.attributes = attributes  # "nombre", "apellido
