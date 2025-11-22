@@ -1,5 +1,5 @@
 from main import Cliente,Profesionales,Turno
-from  import Gestordeturnos
+from gestor import Gestordeturnos
 c=Cliente()
 t=Turno()
 p=Proff()
