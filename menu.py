@@ -2,7 +2,7 @@ from main import Cliente,Profesionales,Turno
 from gestor import Gestordeturnos
 c=Cliente()
 t=Turno()
-p=Proff()
+p=Profesionales()
 g=Gestordeturnos("turnos.csv","clientes.csv")
 print("----SISTEMA DE TURNOS-----")
 print("----MENU----")
