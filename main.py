@@ -17,7 +17,7 @@ class Registrobase(object):
 class Cliente(Registrobase):
     def mostrarclientes(self,archivo):
         self.mostrarvalores(archivo)
-class Proff(Registrobase):
+class Profesionales(Registrobase):
     def mostrarprofesionales(self,archivo):
         self.mostrarvalores(archivo)
 class Turno(Registrobase):
