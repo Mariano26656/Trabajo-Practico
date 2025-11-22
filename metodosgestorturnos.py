@@ -1,4 +1,15 @@
 from transforma import CSV2JSON
+class Registro(object):
+        def registro(self,archivo,**kwargs):
+            ar=open(archivo,"a")
+            valores=[str(valor) for valor in kwargs.values()]
+            linea=",".join(valores)+"\n"
+            ar.write(linea)
+            ar.close()
+            ar=open(archivo,"r")
+            lineas=[linea.strip() for linea in ar.readlines()]
+            ar.close()
+            return lineas
 class Gestordeturnos(Registro):
     # mostrar los metodos correspondientes
     def __init__(self,archivoturno,archivoclientes):
