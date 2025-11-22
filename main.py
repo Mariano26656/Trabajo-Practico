@@ -14,3 +14,12 @@ class Registrobase(object):
         ar.close()
         ver = CSV2JSON(encabezados)
         ver.mostrar_archivo(archivo)
+class Cliente(Registrobase):
+    def mostrarclientes(self,archivo):
+        self.mostrarvalores(archivo)
+class Proff(Registrobase):
+    def mostrarprofesionales(self,archivo):
+        self.mostrarvalores(archivo)
+class Turno(Registrobase):
+    def mostrarturnos(self,archivo):
+        self.mostrarvalores(archivo)
